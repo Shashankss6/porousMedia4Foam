@@ -15,7 +15,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     darcyFoam;
+application     dbsFoam;
 
 startFrom       latestTime;
 

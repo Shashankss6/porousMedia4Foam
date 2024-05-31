@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "libincompressibleMomentumTransportModel.C": "cpp",
+        "libmomentumTransportModel.C": "cpp",
+        "libmomentumTransportModels.C": "cpp"
+    }
+}

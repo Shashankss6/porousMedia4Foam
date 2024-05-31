@@ -16,7 +16,7 @@ cd ../..
 cd dt0_4
 echo Running calcite dissolution \(Thermo. Eq.\) using pM4F with dt = 0.4s
 blockMesh > blockMesh.log
-constantVelocityFoam 
+dbsFoam
 
 #Output data at 20, 40 and 60 min.
 postProcess -time 1200,2400,3600 -func singleGraph
@@ -29,7 +29,7 @@ cd dt0_75
 echo Running calcite dissolution \(Thermo. Eq.\) using dt = 0.75s
 
 blockMesh > blockMesh.log
-constantVelocityFoam 
+dbsFoam
 
 #Output data at 20, 40 and 60 min.
 postProcess -time 1200,2400,3600 -func singleGraph

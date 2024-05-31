@@ -17,29 +17,31 @@ FoamFile
 
 4
 (
+    walls
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          394;
+        startFace       19800;
+    }
     inlet
     {
         type            patch;
         nFaces          3;
-        startFace       47581;
+        startFace       20194;
     }
     outlet
     {
         type            patch;
         nFaces          3;
-        startFace       47584;
+        startFace       20197;
     }
     frontAndBack
     {
         type            empty;
-        nFaces          63708;
-        startFace       47587;
-    }
-    walls
-    {
-        type            patch;
-        nFaces          394;
-        startFace       111295;
+        inGroups        List<word> 1(empty);
+        nFaces          20000;
+        startFace       20200;
     }
 )
 

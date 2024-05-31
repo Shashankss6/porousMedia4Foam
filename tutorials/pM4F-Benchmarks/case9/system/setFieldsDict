@@ -17,12 +17,17 @@ FoamFile
 
 defaultFieldValues
 (
-    volScalarFieldValue Ys.Calcitefake 0.0 
+    volScalarFieldValue Ys.Calcite 0.0 
     volScalarFieldValue linkDomainZonesToPhreeqcSol 1
 );
+//
+//defaultFieldValues
+//(
+//     volScalarFieldValue Ys.Calcitefake 0.0
+//         volScalarFieldValue linkDomainZonesToPhreeqcSol 1
+// );
 
-
-
+/*
 regions
 (
     cylinderToCell
@@ -39,5 +44,21 @@ regions
     }
 
 );
+*/
+regions
+(
+     cylinderToCell
+         {
+	        p1       (0.0005 0.00025 -10); // start point on cylinder axis
+		p2       (0.0005 0.00025 10);   // end point on cylinder axis
+	         radius   1e-4;
 
+	         fieldValues
+	         (
+	              volScalarFieldValue Ys.Calcite 0.999
+		volScalarFieldValue linkDomainZonesToPhreeqcSol 2 //0.9999
+										              );
+						     }
+
+						  );
 // ************************************************************************* //

@@ -24,7 +24,7 @@ defaultFieldValues
 
 regions
 (
-/*
+
     cylinderToCell
     {
         p1       (0 0 -10); // start point on cylinder axis
@@ -37,7 +37,7 @@ regions
    			volScalarFieldValue Ci 0 //0.9999
         );
     }
-*/
+/*
     boxToCell
     {
 		box (0 0 0) (0.15 1 1);
@@ -46,7 +46,7 @@ regions
     		volScalarFieldValue chi 2
         );
     }
-
+*/
 );
 
 // ************************************************************************* //

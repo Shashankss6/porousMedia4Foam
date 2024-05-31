@@ -63,9 +63,9 @@ solvers
     {
 		solver	PBiCG;
 		preconditioner DILU;
-        tolerance        1e-6;
+        tolerance        1e-8;
         relTol           0.1;
-        nSweeps          1;
+        nSweeps          2;
     }
 
     epsSolid

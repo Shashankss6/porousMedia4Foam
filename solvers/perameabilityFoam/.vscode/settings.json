@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "dbsFoam.C": "cpp",
+        "incompressibleMomentumTransportModel.C": "cpp",
+        "libincompressibleMomentumTransportModel.C": "cpp"
+    }
+}

@@ -1745,8 +1745,9 @@ Calcite
 
 Calcitefake
     -start
-10   REM   PARM(1) = specific surface area of Calcite (large grains), [m^2/m^3]
-20  rate = 0.89*PARM(1)*MOL("H+")  #mol/m3/s
+1  REM   PARM(1) = specific surface area of Calcite (large grains), [m^2/m^3]
+10  si_cc = SR("Calcitefake")
+20  rate = 0.89*1.67e5 *MOL("H+")  #mol/m3/s #PARM(1)
 30  mole = rate*time #mol/m3
 35  mole = mole*0.001 #mol/l
 40  save mole

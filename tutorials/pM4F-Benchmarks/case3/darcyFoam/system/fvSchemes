@@ -48,6 +48,7 @@ laplacian(-Mf,p) Gauss linear orthogonal;
     laplacian(nuEff,U)                  Gauss linear orthogonal;
         laplacian((1|A(U)),p)           Gauss linear orthogonal;
         laplacian(Di,Yi)                        Gauss linear orthogonal;
+	laplacian((nu|(eps+2.22045e-16)),U)     Gauss linear orthogonal;
 }
 
 interpolationSchemes
